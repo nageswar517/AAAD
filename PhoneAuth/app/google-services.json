@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "939437214091",
+    "firebase_url": "https://connectingtofirebase-nag517.firebaseio.com",
+    "project_id": "connectingtofirebase-nag517",
+    "storage_bucket": "connectingtofirebase-nag517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939437214091:android:4f01a44737b343663ec78e",
+        "android_client_info": {
+          "package_name": "com.me.nageswar.phone.phoneauth__AAAD"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939437214091-k1ldn8hpsrp77nsflta5pp8o67jtht2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBANnewEN1qAVSRmLN-XEsxE-cjYpe_Qgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939437214091-k1ldn8hpsrp77nsflta5pp8o67jtht2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

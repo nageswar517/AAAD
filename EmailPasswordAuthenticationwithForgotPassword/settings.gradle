@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Email Password Authentication with Forgot Password"

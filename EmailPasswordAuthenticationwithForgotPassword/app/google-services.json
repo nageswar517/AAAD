@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "599219774884",
+    "firebase_url": "https://emailpasswordauthenticat-nag51.firebaseio.com",
+    "project_id": "emailpasswordauthenticat-nag51",
+    "storage_bucket": "emailpasswordauthenticat-nag51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599219774884:android:d81d28ead4c3d45dbd4d31",
+        "android_client_info": {
+          "package_name": "com.nageswar.emailpasswordauthenticationwithforgotpassword__AAAD"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599219774884-lpg8rkkcdpc4l7o7vpg81lgul41pi4ee.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nageswar.emailpasswordauthenticationwithforgotpassword__AAAD",
+            "certificate_hash": "411d97b3103947bc7f11e5fe098141b653c5f207"
+          }
+        },
+        {
+          "client_id": "599219774884-iumn5gp4s9bf6qq7sulmli2crg2o7f9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQnsHUR6mzg2E1NdSqp87PkL3083veMQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599219774884-iumn5gp4s9bf6qq7sulmli2crg2o7f9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
