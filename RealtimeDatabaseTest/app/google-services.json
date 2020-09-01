@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1090098094060",
+    "firebase_url": "https://realtimedbtest-nag517.firebaseio.com",
+    "project_id": "realtimedbtest-nag517",
+    "storage_bucket": "realtimedbtest-nag517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090098094060:android:9431c56da382468d95eac9",
+        "android_client_info": {
+          "package_name": "com.me.nageswar.realtimedatabasetest__AAAD"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090098094060-66vb9aiju60idu1bmicm6dakcif1734l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.me.nageswar.realtimedatabasetest__AAAD",
+            "certificate_hash": "411d97b3103947bc7f11e5fe098141b653c5f207"
+          }
+        },
+        {
+          "client_id": "1090098094060-35tfn561ehhujdctq144muhhqc0j6rbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3A8dFgGRgI1eJSbDeTTFFbAVDKXJtfeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090098094060-35tfn561ehhujdctq144muhhqc0j6rbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
