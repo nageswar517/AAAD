@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         s.setName(name);
         s.setMobile(mobile);
         s.setEmail(email);
-        reference.child("Student").child(rollNo).setValue(s)
+        reference.child("Student").push().setValue(s)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
@@ -66,5 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void read(View view) {
+        Intent i = new Intent(this,DataActivity.class);
+        startActivity(i);
     }
 }
