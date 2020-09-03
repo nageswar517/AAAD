@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shake"
+        android:textSize="25sp"
+        android:id="@+id/shake"
+        android:textColor="#15C3A9"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:textSize="25sp"
+        android:id="@+id/light"
+        android:textColor="#BC1C1C"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch Sensor"
+        android:textSize="25sp"
+        android:id="@+id/touch"
+        android:textColor="#304FFE"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proximity Sensor"
+        android:textSize="25sp"
+        android:id="@+id/proxi"
+        android:textColor="#AEEA00"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mysensor"
+        android:gravity="center"
+        android:text="No Sensor Detected"
+        android:textSize="25sp"
+        android:textColor="#FF5722"/>
+
+</LinearLayout>
