@@ -41,6 +41,21 @@
         android:layout_height="wrap_content"
         android:text="Read"
         android:onClick="read"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_rollno"
+        android:hint="Enetr Roll no"/>
+    <Button
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="update"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="delete"/>
 
 
 </LinearLayout>

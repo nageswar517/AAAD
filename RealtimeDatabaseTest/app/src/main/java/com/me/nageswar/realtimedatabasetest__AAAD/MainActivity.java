@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     //DataBase Reference to use realtime database create objects for the above
     FirebaseDatabase database;
     DatabaseReference reference;
-    EditText et_rollno,et_name,et_mobile,et_email;
+    EditText et_rollno,et_name,et_mobile,et_email,et_sp_roll;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         et_name = findViewById(R.id.name);
         et_mobile = findViewById(R.id.mobileNo);
         et_email = findViewById(R.id.email);
+        et_sp_roll = findViewById(R.id.sp_rollno);
     }
 
     public void save(View view) {
@@ -69,5 +70,59 @@ public class MainActivity extends AppCompatActivity {
     public void read(View view) {
         Intent i = new Intent(this,DataActivity.class);
         startActivity(i);
+    }
+
+    public void update(View view) {
+        final String u_rollno = et_sp_roll.getText().toString();
+        final String u_name = et_name.getText().toString();
+        final String u_mobile = et_mobile.getText().toString();
+        final String u_email = et_email.getText().toString();
+        reference.child("Student").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot:snapshot.getChildren()){
+                    Student s = dataSnapshot.getValue(Student.class);
+                    if(u_rollno.equals(s.getRollNo())){
+                        Toast.makeText(MainActivity.this,
+                                "Data Exists", Toast.LENGTH_SHORT).show();
+                        String key = dataSnapshot.getKey();
+                        s.setName(u_name);
+                        s.setMobile(u_mobile);
+                        s.setEmail(u_email);
+                        reference.child("Student").child(key).setValue(s);
+                        return;
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    public void delete(View view) {
+        final String d_rollno = et_sp_roll.getText().toString();
+        reference.child("Student").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot snapshot1:snapshot.getChildren()){
+                    Student s = snapshot1.getValue(Student.class);
+                    if(d_rollno.equals(s.getRollNo())){
+                        String key = snapshot1.getKey();
+                        reference.child("Student").child(key).removeValue();
+                        Intent i = new Intent(MainActivity.this,MainActivity.class);
+                        startActivity(i);
+                        return;
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 }
